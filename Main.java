@@ -56,6 +56,7 @@ public class Main {
         Collections.sort(students6);
         printStudents (students6);
 
+
         System.out.println("\n\n============== проверка реализации compareTo с помощью TreeSet и аналогичных данных =================");
         LinkedList <Student> students7 = new LinkedList <Student> ();
         students7.addLast(new Student(5, "ВВВ"));
@@ -67,6 +68,8 @@ public class Main {
         TreeSet <Student> tSS = new TreeSet<>(students7);
         System.out.println(tSS);
 
+        System.out.println("\n\n============== Реализация вывода списка методом из класса Student =================");
+        Student.printStudents2(students7);
     }
 
     public static void printStudents (LinkedList <Student> students, int course) {

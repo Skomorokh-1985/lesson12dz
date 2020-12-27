@@ -1,6 +1,5 @@
 package zadachi_str_274;
 
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class Student implements Comparable <Student> {
@@ -31,4 +30,9 @@ public class Student implements Comparable <Student> {
        return " Студент " + name + " курс-" + course;
     }
 
+    public static void printStudents2 (LinkedList <Student> students) {    //ДОБАВИЛ
+        for (Student c: students) {
+                System.out.println(c.toString());
+            }
+    }
 }
